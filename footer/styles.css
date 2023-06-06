@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1; /* allows to expand and fill the available space */
+}
+
+footer {
+    flex-shrink: 0; /* it remains at a fixed height and does not shrink. */
+    height: 60px; 
+    background-color: #f5f5f5;
+}
+
+
