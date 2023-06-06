@@ -50,3 +50,11 @@ To make bundling process faster using webpack:
 - Caching;
 - Minification and compression;
 - Tree shaking
+
+5. Error handler. My solution is at './expressApp' folder.
+
+The function errorHandler.js performs the following steps:
+
+- Logs the error to the console for debugging purposes using console.error();
+- Checks if the error has a statusCode property. If it does, it assumes it is an HTTP error with a specific status code and sends a JSON response with the error message and status code using res.status().json();
+- If the error does not have a statusCode property, it assumes it is a generic error and sends a 500 Internal Server Error response with a generic error message;
