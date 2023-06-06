@@ -29,10 +29,4 @@ There are some differences between their variables :
 
 - Compilation: Sass variables are processed and compiled into static CSS values before the code is served to the browser, while CSS custom properties are parsed and evaluated by the browser at runtime.
 
-To manipulate CSS custom properties with JavaScript use the setProperty method on the style property of a DOM element to change the value of a CSS custom property. Here's an example:
-
-// Get a reference to the DOM element
-const element = document.querySelector('.my-element');
-
-// Set the value of a CSS custom property
-element.style.setProperty('--my-property', 'new value');
+To manipulate CSS custom properties with JavaScript use the setProperty method on the style property of a DOM element to change the value of a CSS custom property element.style.setProperty('--my-property', 'new value');
