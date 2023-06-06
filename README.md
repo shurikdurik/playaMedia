@@ -35,8 +35,18 @@ To manipulate CSS custom properties with JavaScript use the setProperty method o
 
 Tree shaking is a technique in Webpack to remove unused code from the final bundle, reducing its size. To enable it:
 
-- Use ES6 module syntax for importing and exporting modules.
-- Configure Webpack for production mode.
-- Set a modern JavaScript target in your Webpack configuration.
-- Install necessary Babel plugins if using Babel.
+- Use ES6 module syntax for importing and exporting modules;
+- Configure Webpack for production mode;
+- Set a modern JavaScript target in your Webpack configuration;
+- Install necessary Babel plugins if using Babel;
+
 By following these steps, Webpack will automatically analyze your code and remove any unused parts, resulting in a smaller bundle size.
+
+4. Rollup, Esbuild, Vite or SWC. How to make the bundling progress faster?
+
+Unfortunately I don't have any experience with this tools. All bundling process was only on webpack.
+To make bundling process faster using webpack: 
+- Code splitting;
+- Caching;
+- Minification and compression;
+- Tree shaking
