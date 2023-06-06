@@ -3,7 +3,7 @@
 
 1. Footer laid. My solution you can find at "./footer" folder.
 
-The HTML structure consists of a wrapper container (<div class="wrapper">) that contains the main content (<div class="content">) and the footer (<footer>).
+The HTML structure consists of a wrapper container that contains the main content and the footer.
 
 The CSS sets the height of the HTML and body elements to 100% to ensure they cover the entire viewport.
 
@@ -22,16 +22,17 @@ Overall, this implementation uses CSS Flexbox to create a layout where the conte
 2. SASS and CSS
 
 There are some differences between their variables :
-    - Scope: Sass variables are scoped to the file or block in which they are defined, while CSS custom properties have a global scope and can be accessed from anywhere in your CSS.
 
-    - Dynamic vs. Static: CSS custom properties are dynamic, meaning their values can be changed dynamically using JavaScript, whereas Sass variables are static and cannot be changed once compiled.
+- Scope: Sass variables are scoped to the file or block in which they are defined, while CSS custom properties have a global scope and can be accessed from anywhere in your CSS.
 
-    - Compilation: Sass variables are processed and compiled into static CSS values before the code is served to the browser, while CSS custom properties are parsed and evaluated by the browser at runtime.
+- Dynamic vs. Static: CSS custom properties are dynamic, meaning their values can be changed dynamically using JavaScript, whereas Sass variables are static and cannot be changed once compiled.
+
+- Compilation: Sass variables are processed and compiled into static CSS values before the code is served to the browser, while CSS custom properties are parsed and evaluated by the browser at runtime.
 
 To manipulate CSS custom properties with JavaScript use the setProperty method on the style property of a DOM element to change the value of a CSS custom property. Here's an example:
 
-    // Get a reference to the DOM element
-    const element = document.querySelector('.my-element');
+// Get a reference to the DOM element
+const element = document.querySelector('.my-element');
 
-    // Set the value of a CSS custom property
-    element.style.setProperty('--my-property', 'new value');
+// Set the value of a CSS custom property
+element.style.setProperty('--my-property', 'new value');
